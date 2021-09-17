@@ -1,0 +1,18 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "site Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass -w --output-style compressed public/scss -o public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishador/GwendalPetitjean_3_01072021.git"
+  },
+  "author": "Gwendal Petitjean",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

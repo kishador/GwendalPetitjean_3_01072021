@@ -1,0 +1,13 @@
+$primary-color: #9356DC; 
+$second-color: #FF79DA;
+$third-color: #99E2D0;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary-color;
+}
+figure div img {
+    width: 100%;
+    height: 200px;
+}
