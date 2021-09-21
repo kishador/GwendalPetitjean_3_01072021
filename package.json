@@ -4,7 +4,7 @@
   "description": "site Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "node-sass": "node-sass -w --output-style compressed public/scss -o public/css"
+    "node-sass": "node-sass -w --output-style compressed scss -o public/css"
   },
   "repository": {
     "type": "git",
