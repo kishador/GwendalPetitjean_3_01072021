@@ -1,0 +1,48 @@
+.menu {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  &__header {
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: shrikhand;
+  }
+}
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+.menuItem {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    border-radius: .75rem;
+    margin: 1rem 0;
+    box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    &__header {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__title {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }  
+    &__price {
+        font-weight: 700;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: .5rem;
+    }
+}
