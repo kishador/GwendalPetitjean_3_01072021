@@ -31,9 +31,9 @@
     />
   </head>
   <body>
-    <header>
-      <a href="/"><i class="fas fa-arrow-left"></i></a>
-      <h1>ohmyfood</h1>
+    <header class="header">
+      <a href="/" class="header__arrow"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="header__logo">ohmyfood</h1>
     </header>
     <img
       class="page-img"
@@ -43,75 +43,77 @@
     <main class="container menu">
       <div class="menu__header">
         <h2 class="menu__title">Le délice des sens</h2>
-        <i class="far fa-heart"></i>
+        <i class="far fa-heart menu__heart"></i>
       </div>
-      <h2>ENTREES</h2>
+      <h2 class="menu__subtitle">entrées</h2>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Tartare de thon</h3>
-        <p>Assaisonné au yuzu</p>
+        <p class="menuItem__subtitle">Assaisonné au yuzu</p>
         </div>
         <strong class="menuItem__price">25€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Bouchée de homard croustillant</h3>
-        <p>Et sa farandole de petits légumes</p>
+        <p class="menuItem__subtitle">Et sa farandole de petits légumes</p>
         </div>
         <strong class="menuItem__price">35€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Velouté de cèpes</h3>
-        <p>Aux truffes</p>
+        <p class="menuItem__subtitle">Aux truffes</p>
         </div>
         <strong class="menuItem__price">20€</strong><i class="far fa-check-circle"></i>
       </div>
-      <h2>PLATS</h2>
+      <h2 class="menu__subtitle">plats</h2>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Poulet rôti aux herbes de Provence</h3>
-        <p>Et sa créme de truffe</p>
+        <p class="menuItem__subtitle">Et sa créme de truffe</p>
         </div>
         <strong class="menuItem__price">40€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Langouste rôtie</h3>
-        <p>Et ses légumes de saison</p>
+        <p class="menuItem__subtitle">Et ses légumes de saison</p>
         </div>
         <strong class="menuItem__price">35€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Côte de boeuf Angus</h3>
-        <p>Et sa purée de panais</p>
+        <p class="menuItem__subtitle">Et sa purée de panais</p>
         </div>
         <strong class="menuItem__price">44€</strong><i class="far fa-check-circle"></i>
       </div>
-      <h2>DESSERTS</h2>
+      <h2 class="menu__subtitle">desserts</h2>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Farandole de desserts</h3>
-        <p>Du chef</p>
+        <p class="menuItem__subtitle">Du chef</p>
         </div>
         <strong class="menuItem__price">18€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Crème brulée</h3>
-        <p>Revisitée</p>
+        <p class="menuItem__subtitle">Revisitée</p>
         </div>
         <strong class="menuItem__price">22€</strong><i class="far fa-check-circle"></i>
       </div>
       <div class="menuItem">
-        <div class="menuItem__header">
+        <div class="menuItem__text">
         <h3 class="menuItem__title">Tiramisu</h3>
-        <p>À la noisette</p>
+        <p class="menuItem__subtitle">À la noisette</p>
         </div>
         <strong class="menuItem__price">23€</strong><i class="far fa-check-circle"></i>
       </div>
-      <button class="exploration-button" type="button">Commander</button>
+      <div class="container-button">
+      <button class="exploration-button button--width" type="button">Commander</button>
+      </div>
     </main>
     <footer>
       <ul>

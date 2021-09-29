@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-left: 4%;
   margin-right: 4%;
+  margin-bottom: 1.3em;
 }
 .card {
   background-color: white;
@@ -36,6 +37,8 @@
     position: relative;
     display: flex;
     align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: .15rem .15rem .5rem rgba(0,0,0,.125);
   }
 
   &__content {
@@ -44,7 +47,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5em;
   }
 
   &__subtitle {
@@ -54,6 +57,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }

@@ -1,5 +1,8 @@
 .gray-area {
     background-color: #f6f6f6;
     height: auto;
-    padding-top: 30px;
+    padding: 3.3em 0 3.4em 0;
+    &__title{
+      margin-bottom: 1em;
+    }
   }
