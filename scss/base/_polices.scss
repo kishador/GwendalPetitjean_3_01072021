@@ -1,24 +1,18 @@
 @font-face {
-  font-family: "roboto-regular";
-  src: (
-    "../fonts/Roboto-Regular.ttf"
-  );
+  font-family: "roboto";
+  src: local("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "roboto-bold";
-  src: (
-    "../fonts/Roboto-Bold.ttf"
-  );
+  font-family: "roboto";
+  src: local("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "shrikhand";
-  src: (
-    "../fonts/Shrikhand-Regular.ttf"
-  );
+  src: local("../fonts/Shrikhand-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
