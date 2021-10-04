@@ -4,5 +4,9 @@
     padding: 3.3em 0 3.4em 0;
     &__title{
       margin-bottom: 1em;
+      @media (min-width:$tablette){
+        text-align: center;
+      }
     }
   }
+  

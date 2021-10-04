@@ -1,9 +1,9 @@
 .cards {
   display: flex;
   flex-direction: column;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-bottom: 1.3em;
+  @media (min-width:$tablette){
+  width: 50%;
+  }
 }
 .card {
   background-color: white;
@@ -12,7 +12,9 @@
   text-decoration: none;
   color: inherit;
   display: block;
-
+  @media (min-width:$tablette){
+    margin: 10px;
+    }
   &__img {
     height: 12rem;
     width: 100%;
@@ -53,10 +55,22 @@
   &__subtitle {
     margin: 0;
   }
-  .far {
-    display: flex;
+  &__heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+  }
+}
+.container-card {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 1.3em;
+  @media (min-width:$tablette){
+    display: flex;
+    flex-flow: row wrap;
   }
 }

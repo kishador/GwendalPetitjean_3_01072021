@@ -11,6 +11,13 @@ section {
     margin-bottom: 70px;
     list-style: none;
     counter-reset: compteListe;
+    @media (min-width: $desktop){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 96%;
+      margin-bottom: 25px;
+    }
   }
 
   ol h3 {
@@ -24,4 +31,16 @@ section {
   .tutos-title {
     margin-top: 0.9em;
     margin-bottom: 1.4em;
+    @media (min-width: $desktop){
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
   }
+.section-tuto {
+  @media (min-width: $tablette){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

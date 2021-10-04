@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (min-width:$tablette) {
+      margin-top: 0;
+      border-radius: 0 0 0 0;
+    }
   }
   &__title {
     font-family: shrikhand;
@@ -17,6 +21,10 @@
   }
   &__heart {
     font-size: 1.6em;
+    @media (min-width:$tablette){
+      padding-left:8px;
+      font-size: 2em;
+    }
   }
   &__subtitle {
     font-size: 1em;
@@ -34,7 +42,18 @@
       position: absolute;
       left: 0;
       bottom: 0;
+      @media (min-width:$tablette){
+        display: none;
+      }
     }
+    @media (min-width:$tablette){
+      display: flex;
+      justify-content: center;
+      text-decoration: underline 0.25rem $third-color;
+    }
+  }
+  @media (min-width:$tablette){
+    border-radius: 0 0 0 0;
   }
 }
 .container {
@@ -42,21 +61,34 @@
   margin: auto;
   padding-right: 3%;
   padding-left: 3%;
+  @media (min-width:$tablette) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    border-top: 6px solid $third-color;
+  }
 }
 .menuItem {
-  background-color: #fff;
-  padding: 0.9rem;
+  background-color: white;
+  padding: 1rem;
   display: flex;
-  justify-content: space-between;
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+
   &__text {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    flex: 1;
   }
   &__title {
     margin-bottom: 0.4em;
@@ -75,9 +107,108 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 0.5rem;
+    margin-right: 1em;
+  }
+  &__choice {
+    background-color: $third-color;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transition-duration: 0.5s;
+  }
+  &:hover &__choice {
+    margin-right: -1rem;
+  }
+
+  &__wrapIcon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100px;
+    transform: rotate(360deg);
+    transition-duration: 0.7s;
+
+  }
+
+  &:hover &__wrapIcon {
+    transform: rotate(0);
+  }
+
+  &__icon {
+    color: $third-color;
+    margin: auto;
+    display: flex;
+  }
+  @media (min-width:$tablette) {
+    width: 500px;
+  }
+  @media (min-width:$tablette) {
+    width: auto;
   }
 }
 .container-button {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@keyframes itemAppear {
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+.delay-4 {
+  animation-delay: 0.8s;
+}
+.delay-5 {
+  animation-delay: 1s;
+}
+.delay-6 {
+  animation-delay: 1.2s;
+}
+.delay-7 {
+  animation-delay: 1.4s;
+}
+.delay-8 {
+  animation-delay: 1.6s;
+}
+.delay-9 {
+  animation-delay: 1.8s;
+}
+.container-menu {
+  @media (min-width:$tablette){
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width:$desktop){
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  }
+  &__submenu {
+    @media (min-width:$desktop){
+      width: 32%;
+    }
+  }
 }

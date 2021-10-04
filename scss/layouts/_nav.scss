@@ -17,6 +17,11 @@
     text-align: center;
     padding-top: 45px;
     padding-bottom: 35psx;
+    br {
+      @media (min-width:$tablette){
+        display: none;
+      }
+    }
     h2 {
       margin-top: 0%;
       margin-bottom: 0.7em;

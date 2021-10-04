@@ -9,6 +9,13 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    max-width: 400px;
+    @media (min-width:$tablette){
+      width: 400px;
+    }
+    @media (min-width: $desktop){
+      width: 25%;
+    }
     &::before {
     counter-increment: compteListe 1;
     content: counter(compteListe) " ";
