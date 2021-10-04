@@ -1,18 +1,24 @@
 @font-face {
-    font-family: "roboto-regular";
-    src: ("https://kishador.github.io/GwendalPetitjean_3_01072021/public/polices/Roboto-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "roboto-bold";
-    src: ("https://kishador.github.io/GwendalPetitjean_3_01072021/public/polices/Roboto-Bold.ttf");
-    font-weight: bold;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "shrikhand";
-    src: ("https://kishador.github.io/GwendalPetitjean_3_01072021/public/polices/Shrikhand-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "roboto-regular";
+  src: (
+    "../polices/Roboto-Regular.ttf"
+  );
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: (
+    "../polices/Roboto-Bold.ttf"
+  );
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shrikhand";
+  src: (
+    "../polices/Shrikhand-Regular.ttf"
+  );
+  font-weight: normal;
+  font-style: normal;
+}
