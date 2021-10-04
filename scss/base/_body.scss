@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  padding: 0%;
   font-family: "roboto-regular", "roboto-bold", sans-serif;
 }
 h3 {
@@ -9,4 +10,14 @@ h3 {
 h2 {
   font-size: 1.4em;
   font-weight: bold;
+}
+.animate-main {
+  position: relative;
+  animation-name: animate-main;
+  animation-duration: 3s;
+}
+@keyframes animate-main {
+  from{ opacity:0.2 }
+  80%{ opacity: 0.2}
+  to{ opacity:1}
 }

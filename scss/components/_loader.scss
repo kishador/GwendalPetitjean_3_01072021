@@ -1,8 +1,8 @@
-.loader {
-   margin: auto;
-   position: fixed;
-   top: 0; left: 0; right: 0; bottom: 0;
-    
+.container-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -96px; 
 }
 .loader > span {
     display: inline-block;
@@ -12,8 +12,7 @@
     border-radius: 50%;
     margin: 0 16px;
     transform: translate3d(0);
-    animation: bounce 0.6s alternate;
-    animation-iteration-count: 1;
+    animation: bounce 0.6s alternate infinite ;
 }
 .loader > span:nth-child(2){
     background-color: $second-color;
@@ -31,11 +30,14 @@
         transform: translate3d(0, -32px, 0);
     }
 }
-.main {
-    width: 100%;
-    height: auto;
+
+.display-none{
     opacity: 0;
-    display: none;
-    transition: opacity 2s ease-in;
+    animation: display 3S;
+    @keyframes display {
+        from {opacity: 1;}
+        80% {opacity: 0.8}
+        to {opacity: 0}
+    }
 }
 
