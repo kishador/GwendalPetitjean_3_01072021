@@ -62,10 +62,25 @@
     display: inline-block;
     font-style: normal;
     font-variant: normal;
-    text-rendering: auto;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.7rem;
     font-size: 1.5em;
+    opacity: 1;
+    transition-duration: 1.8s;
+    &:hover {
+      opacity:0;
+    }
+    &--full {
+      color: $primary-color;
+      opacity: 0;
+      transition-duration: 1.8s;
+      }
+    &--full:hover {
+      opacity: 1;
+    }
   }
 }
 .container-card {
