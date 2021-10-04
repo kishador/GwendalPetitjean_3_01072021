@@ -12,12 +12,14 @@
   text-decoration: none;
   color: inherit;
   display: block;
+  margin-bottom: 1.2em;
   @media (min-width:$tablette){
     margin: 10px;
     }
   &__img {
     height: 12rem;
     width: 100%;
+    margin-bottom: 0;
     border: transparent solid 0px;
     border-radius: 1rem 1rem 0 0;
     box-shadow: none;
@@ -36,6 +38,7 @@
 
   &__footer {
     padding: 1rem;
+    margin-top: 0;
     position: relative;
     display: flex;
     align-items: center;
