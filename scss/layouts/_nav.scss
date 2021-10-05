@@ -1,8 +1,6 @@
 .location-search {
-    display: flex;
+    @include flex-center;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     height: 50px;
     background-color: #ececec;
   }

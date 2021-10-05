@@ -38,9 +38,7 @@ section {
   }
 .section-tuto {
   @media (min-width: $tablette){
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }

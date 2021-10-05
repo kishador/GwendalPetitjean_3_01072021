@@ -30,12 +30,12 @@
       top: 1.2em;
       font-size: 2em;
     }
-    &:active {
+    &:hover {
       opacity: 0;
     }
     &--full {
       @include heart-full;
-      &:active {
+      &:hover {
         opacity: 1;
       }
     }
@@ -62,8 +62,7 @@
       }
     }
     @media (min-width:$tablette){
-      display: flex;
-      justify-content: center;
+      @include flex-center;
       text-decoration: underline 0.25rem $third-color;
     }
   }
@@ -76,10 +75,8 @@
   padding-right: 3%;
   padding-left: 3%;
   @media (min-width:$tablette) {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 0;
     border-top: 6px solid $third-color;
   }
@@ -127,12 +124,10 @@
     background-color: $third-color;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    @include flex-center;
     transition-duration: 0.5s;
   }
-  &:active &__choice {
+  &:hover &__choice {
     margin-right: -1rem;
   }
 
@@ -140,16 +135,14 @@
     height: 1.6rem;
     width: 1.6rem;
     background-color: white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    @include flex-center;
     border-radius: 100px;
     transform: rotate(360deg);
     transition-duration: 0.7s;
 
   }
 
-  &:active &__wrapIcon {
+  &:hover &__wrapIcon {
     transform: rotate(0);
   }
 
@@ -166,9 +159,7 @@
   }
 }
 .container-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 @keyframes itemAppear {
   0% {

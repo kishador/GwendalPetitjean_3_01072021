@@ -17,3 +17,8 @@
     opacity: 0;
     transition-duration: 1.8s;
 }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
