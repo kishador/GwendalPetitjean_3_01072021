@@ -1,0 +1,19 @@
+@mixin heart-empty {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 1;
+    transition-duration: 1.8s;   
+}
+@mixin heart-full {
+    display: inline-block;
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, $second-color, $primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition-duration: 1.8s;
+}

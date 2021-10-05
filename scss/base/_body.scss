@@ -17,7 +17,7 @@ h2 {
   animation-duration: 3s;
 }
 @keyframes animate-main {
-  from{ opacity:0.2 }
-  80%{ opacity: 0.2}
+  from{ opacity:0 }
+  90%{ opacity: 0.1}
   to{ opacity:1}
 }
