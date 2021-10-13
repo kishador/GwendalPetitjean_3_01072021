@@ -1,6 +1,8 @@
 .cards {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: black;
   @media (min-width:$tablette){
   width: 50%;
   }

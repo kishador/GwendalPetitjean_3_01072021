@@ -11,7 +11,7 @@
     height: 32px;
     border-radius: 50%;
     margin: 0 16px;
-    transform: translate3d(0);
+    transform: translate3d(0, 0, 0);
     animation: bounce 0.6s alternate infinite ;
 }
 .loader > span:nth-child(2){
